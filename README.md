@@ -53,5 +53,10 @@ reproduce, so treat this layer as a precaution rather than a proven requirement.
   whether you are signed in to Copilot.
 - Which models work depends on your Copilot plan and policy. The gateway occasionally returns
   `500 fetch failed` for a model (upstream connection), which is intermittent.
-- Windows only (PowerShell / `cmd.exe`).
+- Terminal per OS: **Windows** opens PowerShell through the default terminal app set in Windows
+  (Terminal or the classic console); **macOS** opens a `.command` launcher with `open`, so it uses
+  your registered handler (Terminal, or iTerm2 if you set it); **Linux** tries `xdg-terminal-exec`,
+  `x-terminal-emulator`, then gnome-terminal, konsole, xfce4-terminal, kitty, alacritty, wezterm and
+  xterm. On macOS and Linux the window starts from `~/.claude/provider-switch/launch.{command,sh}`
+  (holds the gateway variables and your `PATH`, mode 700). Only the Windows path has been tested.
 - No `LICENSE` yet: choose one before publishing.
