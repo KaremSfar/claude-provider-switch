@@ -1,0 +1,5 @@
+{
+  "name": "claude-provider-switch",
+  "owner": { "name": "local" },
+  "plugins": [{ "name": "provider-switch", "source": "./" }]
+}

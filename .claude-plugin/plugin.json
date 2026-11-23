@@ -1,0 +1,5 @@
+{
+  "name": "provider-switch",
+  "version": "0.1.0",
+  "description": "/provider command to switch Claude Code between Anthropic and a local Copilot gateway (copilot-api)"
+}
